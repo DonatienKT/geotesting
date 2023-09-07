@@ -25,7 +25,7 @@ pipeline{
             file: 'target/bioMedical-0.0.4-SNAPSHOT.jar', type: 'jar']],
              credentialsId: 'NexusID', groupId: 'PROD',
                 nexusUrl: '198.58.119.40:8081', nexusVersion: 'nexus3', protocol: 'http',
-                repository: 'donas_war-file', version: '0.0.4-SNAPSHOT'
+                repository: 'donas_war-file', version: '0.0.4'
         }
     }
     }
