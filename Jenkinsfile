@@ -22,7 +22,7 @@ pipeline{
  stage('upload artifact'){
         steps{
             nexusArtifactUploader artifacts: [[artifactId: 'bioMedical', classifier: '',
-            file: 'target/bioMedical-0.0.3-SNAPSHOT.jar', type: 'war']],
+            file: 'target/bioMedical-0.0.4-SNAPSHOT.jar', type: 'war']],
              credentialsId: 'NEXUSID', groupId: 'qa',
                 nexusUrl: '198.58.119.40:8081', nexusVersion: 'nexus3', protocol: 'http',
                 repository: 'donas_war-file', version: '0.0.4-SNAPSHOT'
