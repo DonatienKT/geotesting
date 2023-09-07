@@ -26,3 +26,12 @@ pipeline{
     }
     }
 }
+
+
+
+
+nexusArtifactUploader artifacts: [[artifactId: 'bioMedical', classifier: '',
+ file: 'target/bioMedical-0.0.3-SNAPSHOT.jar', type: 'war']],
+  credentialsId: 'NEXUSID', groupId: 'qa',
+ nexusUrl: '198.58.119.40:8081', nexusVersion: 'nexus3', protocol: 'http',
+  repository: 'donas_war-file', version: '0.0.4-SNAPSHOT'
